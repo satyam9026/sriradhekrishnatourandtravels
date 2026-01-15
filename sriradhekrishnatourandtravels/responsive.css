@@ -1,0 +1,509 @@
+.top-contact {
+    display: flex !important;
+    justify-content: center !important;
+}
+@media (max-width:600px) {
+
+    .destinations-bar,
+    marquee,
+    .header-contact {
+        display: none !important;
+    }
+}
+     /* header  css  start*/
+     /* ========== GLOBAL STYLES ========== */
+     
+ :root {
+    --main: #87016c;
+    --yellow: #ddff00;
+    --white: #ffffff;
+    --black: #000000;
+    --orange: #ff6200;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: linear-gradient(267deg, #fffbd4);
+    background-size: 11% 11%;
+    animation: headerGradient 6s linear infinite;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+.container,
+.container-fluid {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ========== DESTINATIONS BAR ========== */
+.destinations-bar {
+    background:#ff4500;
+    color: var(--white);
+    padding: 6px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+.destinations-scroll {
+    display: flex;
+    gap: 14px;
+    padding: 0 12px;
+    align-items: center;
+    min-width: max-content;
+}
+.destinations-scroll a {
+    color: var(--white);
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.proprietor-text {
+    margin-left: auto;
+    font-size: 13px;
+    white-space: nowrap;
+}
+/* ========== MARQUEE ========== */
+marquee {
+    background: #ffa801;
+    padding: 6px 0;
+    font-size: 14px;
+    width: 100%;
+}
+/* ========== TOP CONTACT ========== */
+.top-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 0px;
+}
+.top-contact a {
+    background: #2e1364;
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.top-contact i {
+    color: #5eff00;
+}
+/* ========== HEADER & NAVBAR ========== */
+.main-header {
+    background: #cf106a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* MAIN HEADER GRADIENT BACKGROUND */
+.main-header {
+       background: linear-gradient(270deg, #d73b00, #d95c00, #ff4400, #d53a00);
+    background-size: 132% 368%;
+    animation: headerGradient 3s linear infinite;
+}
+/* GRADIENT ANIMATION */
+@keyframes headerGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Logo Container */
+
+.navbar-brand {
+    display: flex !important;
+    align-items: center !important;
+    margin-right: 0 !important;
+    
+}
+/* ===== CIRCULAR LOGO FIX ===== */
+.nav-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--white);
+    flex-shrink: 0;
+}
+/* Brand Text */
+.brand-text {
+    line-height: 1.2;
+    margin-left: 15px;
+}
+.brand-title {
+    display: block;
+    font-size: 38px;
+    font-weight: 800;
+    color: #fffffc;
+    letter-spacing: 0.5px;
+}
+.brand-tagline {
+    display: block;
+    font-size: 15px;
+    color: var(--white);
+    letter-spacing:-0.5px;
+}
+/* Navigation Menu */
+.navbar-nav {
+   
+      display: flex;
+  align-items: center;
+  gap: 3px; 
+}
+/* ===== NAV MENU TEXT ONE LINE FIX ===== */
+.navbar-nav .nav-link {
+  white-space: nowrap;     /* 🔥 text ko ek line me rakhega */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Desktop & Laptop */
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-wrap: nowrap;     /* menu wrap band */
+  }
+}
+
+.navbar-nav .nav-link {    
+       color: #000000;
+    background-color: #ffffff;
+    padding: 10px 13px;
+    border-radius: 7px;
+    font-size: 13px;
+    text-align: center;
+    margin: 02x 2;
+    font-weight: 800;
+    transition: all 0.3s ease;
+   
+}
+.navbar-nav .nav-link:hover {
+    background: #ff5100;
+    transform: translateY(-2px);
+}
+.navbar-nav .nav-link:hover {
+    background: #0a0636;
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+/* Toggle Button */
+.navbar-toggler {
+    border: 3px solid #000000;
+    padding: 5px 8px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler-icon {
+    background-color: #000;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+            /* ========== RESPONSIVE ========== */
+/* Tablet */
+@media (max-width: 991px) {
+    .brand-title { font-size: 70px; }
+    .brand-tagline { font-size: 21px; }
+    .nav-logo { width: 60px; height: 60px; }
+    .navbar-collapse {
+        background:#0a0c3a;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+    .navbar-nav .nav-link {
+        width: 100%;
+        text-align: left;
+    }
+    .proprietor-text { display: none; }
+}
+/* Mobile */
+@media (max-width: 767px) {
+    .brand-title { font-size: 22px; }
+    .brand-tagline { font-size: 11px; }
+    .nav-logo { width: 55px; height: 55px; }
+    .top-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-contact a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* Small Mobile */
+@media (max-width: 575px) {
+    .brand-title { font-size: 24px; }
+    .brand-tagline { font-size: 10px; }
+    .nav-logo { width: 50px; height: 50px; }
+    .navbar-toggler {
+        position: relative;
+        right: -6px;
+        top: 22
+        px;
+     
+        transform: translateY(-50%);
+    }
+}
+/* Extra Small */
+@media (max-width: 400px) {
+    .brand-title { font-size:21px; }
+    .brand-tagline { font-size: 9px; }
+    .nav-logo { width: 45px; height: 45px; }
+    .top-contact a {
+        font-size: 16px;
+    }
+}
+/* ========== FLOATING BUTTONS ========== */
+.floating-buttons {
+    position: fixed;
+    right: 8px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 9999;
+}
+.floating-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--white);
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+.floating-btn:hover { transform: scale(1.1); }
+/* Colors */
+.whatsapp-btn { background: #25D366; }
+.call-btn { background: #ffa801; }
+.back-to-top { background: #ff029e; }
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6a0158;
+}
+/* BRAND TITLE – GRADIENT COLOR FILL */
+.brand-title {
+     font-weight: 900;
+    background: linear-gradient(1deg, #000, #95f5ff, #fff, #1f00ff);
+    background-clip: text;
+    letter-spacing: 0px;
+}
+/* TAGLINE – SOFT GRADIENT */
+.brand-tagline {
+   font-weight: 600;
+  background: linear-gradient( 90deg, #fff, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.brand-title {
+    text-shadow:#ffeb00;
+}
+.brand-tagline {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+} 
+    /* header  section  css end */ 
+    /* footer  css  start*/
+       :root {
+            --primary-color: #1a5276;
+            --secondary-color: #e67e22;
+            --accent-color: #f39c12;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        @media (min-width: 1200px) {
+    .h1, h1 {
+        font-size: 1.9rem;
+    }
+}
+
+.h
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content {
+            flex: 1;
+            padding: 35px 0;
+        }
+        .page-title {
+            color: #ff0c0c;
+            text-align: center;
+            margin-bottom: -20px;
+            font-weight: 600;
+        }
+        .taxi-footer {
+            background-color: #dc5c00;
+            color: white;
+            padding: 40px 0 2px;
+            margin-top: auto;
+        }
+        .footer-heading {
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-links li {
+            margin-bottom: 10px;
+        } 
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .contact-info {
+            margin-bottom: 15px;
+        }
+        .contact-info i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+            width: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        } 
+        .social-icons a:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        .copyright {
+           border-top: 0px solid rgb(0 0 0 / 10%);
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: center;
+    color: #000000;
+    font-size: 1.2rem;
+}
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .footer-logo i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+        .booking-center {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }  
+        .booking-center h6 {
+            color: #030000;
+            margin-bottom: 5px;
+            font-weight: 900;
+        }
+        /* Scrollable sections */
+        .scrollable-section {
+            max-height: 300px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        /* Custom scrollbar for webkit browsers */
+        .scrollable-section::-webkit-scrollbar {
+            width: 6px;
+        }
+        .scrollable-section::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .scrollable-section::-webkit-scrollbar-thumb {
+            background: var(--secondary-color);
+            border-radius: 10px;
+        }
+            .scrollable-section::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-color);
+        } 
+        /* For Firefox */
+        .scrollable-section {
+            scrollbar-width: thin;
+            scrollbar-color: var(--secondary-color) rgba(255, 255, 255, 0.1);
+        }    
+        /* Section headers with toggle for mobile */
+        .section-toggle {
+            display: none;
+        }  
+        @media (max-width: 768px) {
+            .section-toggle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                margin-bottom: 15px;
+            }       
+            .section-toggle i {
+                transition: transform 0.3s ease;
+            } 
+            .section-toggle.active i {
+                transform: rotate(180deg);
+            }   
+            .scrollable-section {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }   
+            .scrollable-section.active {
+                max-height: 300px;
+            }
+        }
+        /* footer  css  end*/

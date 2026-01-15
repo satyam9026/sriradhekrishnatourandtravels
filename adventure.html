@@ -1,0 +1,1366 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sri Radhe Krishna Tour & Travels Journeys of Devotion & Discovery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /*Adventure  css  section   sart */
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        .page-header {
+            background: linear-gradient(135deg, #b052a4, #bf8343e8);
+            color: white;
+            padding: 6px 0 0px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 360;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,192C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .page-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .divider {
+            height: 6px;
+            width: 300px;
+            background-color: #140bff;
+            margin: 1px auto;
+            border-radius: 14px;
+
+
+        }
+
+        /* Search Bar */
+        .search-container {
+            max-width: 700px;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        .search-box {
+            display: flex;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .search-btn {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .search-btn:hover {
+            background: var(--accent-color);
+        }
+
+        /* Quick Actions */
+        .quick-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .action-btn {
+            background: rgba(0, 0, 0, 0.98);
+            color: #24ff05;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .action-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Filter Section */
+        .filter-section {
+            background: rgba(191, 72, 124, 0.728);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .filter-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .filter-btn {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #0034ff;
+            color: white;
+            border-color: #fff;
+        }
+
+        /* Destination Card Styles */
+        .destination-card {
+           background: linear-gradient(1deg, #ffc8f8, #d5f3fa, #a2f0fc, #f7e0ff);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            border: none;
+            height: 450px;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                background: linear-gradient(135deg,  #83fef8);
+        }
+
+        .destination-header {
+            background: linear-gradient(135deg, var(--primary-color), #2c3e50);
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        .destination-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .destination-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ff0000;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .destination-body {
+            padding: 25px;
+        }
+
+        .destination-type {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .destination-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9rem;
+        }
+
+        .feature i {
+            color: var(--accent-color);
+        }
+
+        .destination-time {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .time-icon {
+            color: var(--secondary-color);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        .time-text {
+            font-weight: 500;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .price {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--success-color);
+        }
+
+        .explore-btn {
+            background-color: #1a05ff;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .explore-btn:hover {
+            background-color: #00af14;
+            color: rgb(0, 0, 0);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #000, #b43585);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 15px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,192C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cta-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 25px;
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .cta-btn {
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .cta-btn-primary {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+        }
+
+        .cta-btn-primary:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Floating Action Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 70px;
+            right: 0px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .call-btn {
+            background: var(--secondary-color);
+        }
+
+        .booking-btn {
+            background: var(--primary-color);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 0px 0 5px;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .page-subtitle {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+
+            .destination-title {
+                font-size: 1.2rem;
+            }
+
+            .floating-buttons {
+                bottom: 125px;
+                right: 5px;
+            }
+
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title {
+                font-size: 1.8rem;
+            }
+
+            .destination-header {
+                padding: 15px;
+            }
+
+            .destination-body {
+                padding: 20px;
+            }
+
+            .card-footer {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-btn {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <div class="destinations-bar">
+        <div class="destinations-scroll">
+            <a>Haridwar</a><a>Rishikesh</a><a>Nainital</a><a>Pokhara</a><a>Kathmandu</a><a>Janakpur</a><a>Sikkim</a><a>Tripura</a><a>Nagaland</a>
+            <span class="proprietor-text">Proprietor - Gita </span>
+        </div>
+    </div>
+
+    <marquee scrollamount="5">
+        Haridwar || Rishikesh || Nainital || Pokhara || Kathmandu || Darjeeling || Mustang || Muktinath || Chitwan ||
+        Janakpur
+    </marquee>
+   
+    <div class="container py-1 px-1">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="top-contact text-center">
+                    <a href="https://wa.me/919219698052"><i class="fa fa-phone"></i>+91 9219698052</a>
+                    <a href="mailto:thefamilytravels@gmail.com" class="header-contact"><i class="fa fa-envelope"></i>
+                        sriradhekrishnatourandtravels@gmail.com</a>
+                    <a href="extra_activity.html" style="text-decoration:none;color:#fff;font-size:14px;">Extra
+                        Activity</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <header class="main-header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+              
+                <a class="navbar-brand" href="#">
+                    <img src="images/klogo3.png" class="nav-logo" alt="The Family Travels Logo">
+                    <div class="brand-text">
+                        <span class="brand-title">SRI RADHE KRISHNA</span>
+                        <span class="brand-tagline">TOUR & TRAVELS JOURNEYS OF DEVOTION & DISCOVERY</span>
+                    </div>
+                </a>
+             
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+         
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nepal_tour.html">Nepal Tour</a></li>
+                        <li class="nav-item"><a class="nav-link" href="taxi_services.html">Taxi Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="adventure.html">Adventure</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Fleet_Partners.html">Fleet Partners</a></li>
+                       <li class="nav-item"><a class="nav-link" href="destinations.html">Destination</a></li>
+                        <li class="nav-item"><a class="nav-link" href="package.html">Package</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="floating-buttons">
+        <a href="https://wa.me/919219698052" target="_blank" class="floating-btn whatsapp-btn"><i
+                class="fab fa-whatsapp"></i></a>
+        <a href="tel:9219698052" class="floating-btn call-btn"><i class="fa fa-phone"></i></a>
+        <a href="#" class="floating-btn back-to-top"><i class="fa fa-arrow-up"></i></a>
+    </div>
+ 
+    <script>
+        // Back to Top functionality
+        document.querySelector('.back-to-top').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        // Add active class to current page link
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.style.backgroundColor = '#ff6200';
+                    link.style.color = '#ffffff !important';
+                }
+            });
+        });
+        // Make floating buttons more visible on scroll
+        window.addEventListener('scroll', function () {
+            const floatingButtons = document.querySelector('.floating-buttons');
+            if (window.scrollY > 300) {
+                floatingButtons.style.opacity = '1';
+                floatingButtons.style.visibility = 'visible';
+            } else {
+                floatingButtons.style.opacity = '0.9';
+            }
+        });
+    </script>
+  
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+  Sri Radhe Krishna Tour & Travels <br>
+  Journeys of Devotion & Discovery
+</h1>
+<style>
+   .page-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fb4700;
+    animation: slideLR 3s ease-in-out infinite alternate;
+}
+
+/* Left ↔ Right Animation */
+@keyframes slideLR {
+    from {
+        transform: translateX(-80px);
+    }
+    to {
+        transform: translateX(80px);
+    }
+}
+</style>
+          
+
+        </div>
+    </header>
+    <style>
+        .page-header {
+               background: linear-gradient(rgb(255 255 255 / 0%), rgb(133 255 241 / 55%)), url(images/img16.jpg) center / cover no-repeat;
+
+            padding: 220px 0;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* ✨ Smooth zoom effect */
+        .page-header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url("images/img16.jpg") center/cover no-repeat;
+            transform: scale(1.1);
+            filter: blur(2px);
+            z-index: -1;
+        }
+    </style>
+
+
+    <div class="container">
+        
+
+        <h3 style="height: 32px; width:100%; margin-top: -13px; margin-bottom: 10px;margin-left: 24px">Top Adventure
+            Place</h3>
+
+        <section class="destinations-section">
+            <div class="row">
+    
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Lumbini</h3>
+                            <span class="destination-badge">Popular</span>
+                        </div>
+                        <div class="destination-body">
+
+       
+                            <img src="images/lumbiny.jpg" alt="img" class="destination-img">
+                            <style>
+                                .destination-img {
+                                    width: 100%;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Nepal Pilgrim </div>
+
+
+
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to March</span>
+                            </div>
+
+                            <div class="card-footer">
+
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+             
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Janakpur</h3>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/janakpur.jpg" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 180px;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Janaki Tempal</div>
+
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to March</span>
+                            </div>
+                            <div class="card-footer">
+
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+  
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Ayodhya</h3>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/ayodhya.jpg" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 180px;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Ram janmabhoomi ayodhya</div>
+
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to March</span>
+                            </div>
+                            <div class="card-footer">
+
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Pokhara Lake</h3>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images//pokhrta rang.jpg" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 180px;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Pokhara Lake Annapurna Range</div>
+
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to March</span>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+     
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Tavishnath Temple</h3>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/vis.png" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 180px;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Lord Shiva, the "Ruler of the Universe," </div>
+                            <div class="destination-features">
+                            </div>
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to March</span>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Pokhara</h3>
+                            <span class="destination-badge">Scenic</span>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/pokhara.jfif" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 180px;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Nepal Tourist Route</div>
+                            <div class="destination-features">
+
+
+                            </div>
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to May</span>
+                            </div>
+                            <div class="card-footer">
+
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Varanasi</h3>
+                            <span class="destination-badge">Popular</span>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/kashi.jpg" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 180px;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Spiritual City</div>
+                            <div class="destination-features">
+
+
+
+                            </div>
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to March</span>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Lucknow</h3>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/img60.jpg" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 180px;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Uttar Pradesh Capital</div>
+                            <div class="destination-features">
+
+
+
+                            </div>
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to March</span>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Kathmandu</h3>
+                            <span class="destination-badge">International</span>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/img59.jpg" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 180px;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Nepal Capital Transfer</div>
+                            <div class="destination-features">
+
+
+
+                            </div>
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to May</span>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+     
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Ayodhya</h3>
+                            <span class="destination-badge">Pilgrimage</span>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/ayodhya.jpg" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 180px;
+                                    /* Smaller width */
+                                    height: 120px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Ram Janmabhoomi Route</div>
+                            <div class="destination-features">
+
+
+
+                            </div>
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to March</span>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Muktinath</h3>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/muktinath.jpeg" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 370px;
+                                    /* Smaller width */
+                                    height: 70px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Gateway to Western Nepal</div>
+                            <div class="destination-features">
+
+
+
+                            </div>
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to May</span>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="col-lg-6 col-xl-4">
+                    <div class="destination-card">
+                        <div class="destination-header">
+                            <h3 class="destination-title">Gorakhpur to Butwal</h3>
+                        </div>
+                        <div class="destination-body">
+                            <img src="images/img51.jpg" alt="img" class="destination-img">
+                            <style>
+                                .destination-body {
+                                    width: 370px;
+                                    /* Smaller width */
+                                    height: 70px;
+                                    /* Smaller height */
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                    margin: 0 auto 15px;
+                                    /* center + bottom space */
+                                    display: block;
+                                }
+                            </style>
+                            <div class="destination-type">Gateway to Western Nepal</div>
+                            <div class="destination-features">
+
+
+                            </div>
+                            <div class="destination-time">
+                                <i class="fas fa-calendar-alt time-icon"></i>
+                                <span class="time-text">Best Time: October to May</span>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/919219698052" target="_blank" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   
+        <div class="cta-section">
+            <h2 class="cta-title">Need a Custom Route?</h2>
+            <p class="cta-text">We provide taxi services to many more destinations. Contact us for special requirements
+                or group bookings.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/919219698052" target="_blank" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone-alt me-2"></i> Call Now: +91 9219698052
+                </a>
+                <a href="contact.html" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-envelope me-2"></i> Send Inquiry
+                </a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="main-content">
+        <div class="container">
+            <h1 class="page-title"> Sri Radhe Krishna Tour & Travels
+                Journeys of Devotion & Discovery</h1>
+        </div>
+    </div>
+
+    <footer class="taxi-footer">
+        <div class="container">
+            <div class="row">
+              
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-white">
+                
+                    <div class="d-flex align-items-center gap-3 flex-wrap mb-3">
+                        <img src="images/klogo3.png" class="rounded-circle img-fluid" style="height:80px; width:80px;"
+                            alt="logo">
+
+                        <div class="fw-bold fs-5">
+                            Sri  Radhe Krishna Tour & Travels <br>
+                            <small class="fw-normal fs-6">
+                                Journeys of Devotion & Discovery
+                            </small>
+                        </div>
+                    </div>
+                  <p class="small">
+                        Providing reliable and comfortable taxi services in Gorakhpur and beyond.
+                        Your journey is our priority.
+                    </p>
+                  
+                    <div class="d-flex align-items-start gap-2 mb-2">
+                        <i class="fas fa-phone text-warning mt-1"></i>
+                        <span>+91 9219698052</span>
+                    </div>
+                    <div class="d-flex align-items-start gap-2 mb-2">
+                        <i class="fas fa-envelope text-warning mt-1"></i>
+                        <span class="text-break">
+                            sriradhekrishnatourandtravels@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-start gap-2 mb-3">
+                        <i class="fas fa-map-marker-alt text-warning mt-1"></i>
+                        <span>
+                            Gita Vatika, Shahpur<br>
+                            273006, Gorakhpur
+                        </span>
+                    </div>
+                
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-warning btn-sm rounded-circle">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-warning btn-sm rounded-circle">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-warning btn-sm rounded-circle">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919219698052" class="btn btn-warning btn-sm rounded-circle">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="section-toggle">
+                        <h5 class="footer-heading mb-0">Popular Routes</h5>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="scrollable-section">
+                        <ul class="footer-links">
+                            <li><a href="#">Gorakhpur to Gorakhnath Temple</a></li>
+                            <li><a href="#">Gorakhpur to Pokhara</a></li>
+                            <li><a href="#">Gorakhpur to Varanasi</a></li>
+                            <li><a href="#">Gorakhpur to Lucknow</a></li>
+                            <li><a href="#">Gorakhpur to Kathmandu</a></li>
+                            <li><a href="#">Gorakhpur to Ayodhya</a></li>
+                            <li><a href="#">Gorakhpur to Sonauli</a></li>
+                            <li><a href="#">Gorakhpur to Butwal</a></li>
+                            <li><a href="#">Gorakhpur to Delhi</a></li>
+                            <li><a href="#">Gorakhpur to Mumbai</a></li>
+                            <li><a href="#">Gorakhpur to Bangalore</a></li>
+                            <li><a href="#">Gorakhpur to Chennai</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="section-toggle">
+                        <h5 class="footer-heading mb-0">More Routes</h5>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="scrollable-section">
+                        <ul class="footer-links">
+                            <li><a href="#">Gorakhpur to Ranchi</a></li>
+                            <li><a href="#">Gorakhpur to Kolkata</a></li>
+                            <li><a href="#">Gorakhpur to Agra</a></li>
+                            <li><a href="#">Gorakhpur to Noida</a></li>
+                            <li><a href="#">Gorakhpur to Nainital</a></li>
+                            <li><a href="#">Gorakhpur to Char Dham</a></li>
+                            <li><a href="#">Gorakhpur to Muzaffarpur</a></li>
+                            <li><a href="#">Gorakhpur to Prayagraj</a></li>
+                            <li><a href="#">Gorakhpur to Patna</a></li>
+                            <li><a href="#">Gorakhpur to Jaipur</a></li>
+                            <li><a href="#">Gorakhpur to Hyderabad</a></li>
+                            <li><a href="#">Gorakhpur to Ahmedabad</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="section-toggle">
+                        <h5 class="footer-heading mb-0">Booking Centers</h5>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="scrollable-section">
+                        <div class="booking-center">
+                            <h6>Head Office</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>
+                        <div class="booking-center">
+                            <h6>Booking Center 1</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>
+                        <div class="booking-center">
+                            <h6>Booking Center 2</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>
+                        <div class="booking-center">
+                            <h6>Booking Center 3</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>
+                        <div class="booking-center">
+                            <h6>Booking Center 4</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+               &copy; 2026 Sri Radhe Krishna Tour & Travels Ajency. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle sections on mobile
+        document.addEventListener('DOMContentLoaded', function () {
+            const sectionToggles = document.querySelectorAll('.section-toggle');
+            sectionToggles.forEach(toggle => {
+                toggle.addEventListener('click', function () {
+                    const section = this.nextElementSibling;
+                    this.classList.toggle('active');
+                    section.classList.toggle('active');
+                });
+            });
+            // Auto-expand sections on desktop
+            if (window.innerWidth > 768) {
+                document.querySelectorAll('.scrollable-section').forEach(section => {
+                    section.classList.add('active');
+                });
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // Add active class to clicked button
+                this.classList.add('active');
+
+                // In a real implementation, you would filter the cards here
+                // For this demo, we'll just show an alert
+                alert(`Filtering by: ${this.textContent}`);
+            });
+        });
+
+        // Search functionality
+        document.querySelector('.search-btn').addEventListener('click', function () {
+            const searchTerm = document.querySelector('.search-input').value;
+            if (searchTerm.trim() !== '') {
+                alert(`Searching for: ${searchTerm}`);
+            }
+        });
+
+        // Allow Enter key to trigger search
+        document.querySelector('.search-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                document.querySelector('.search-btn').click();
+            }
+        });
+
+        // Add animation to cards on scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            const cards = document.querySelectorAll('.destination-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+
+   
+  
+    <script>
+        // Toggle sections on mobile
+        document.addEventListener('DOMContentLoaded', function () {
+            const sectionToggles = document.querySelectorAll('.section-toggle');
+
+            sectionToggles.forEach(toggle => {
+                toggle.addEventListener('click', function () {
+                    const section = this.nextElementSibling;
+                    this.classList.toggle('active');
+                    section.classList.toggle('active');
+                });
+            });
+
+            // Auto-expand sections on desktop
+            if (window.innerWidth > 768) {
+                document.querySelectorAll('.scrollable-section').forEach(section => {
+                    section.classList.add('active');
+                });
+            }
+        });
+    </script>
+    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html> -->

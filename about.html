@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sri Radhe Krishna Tour & Travels
+Journeys of Devotion & Discovery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+     
+
+        /* main  section   css  start*/
+
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        .py-3 {
+            padding-top: 0rem !important;
+            padding-bottom: 1rem !important;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #ce0000;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: #ff0000;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+            margin-top: 10px;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+
+        .about-img:hover {
+            transform: scale(1.02);
+        }
+
+        .feature-box {
+            background: #a4e9eb;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            height: 100%;
+            transition: all 0.3s ease;
+            border-top: 4px solid #ff0707;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-box h5 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .feature-box i {
+            font-size: 2.5rem;
+            color: #0d00ff;
+            margin-bottom: 15px;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #651a60, #811c59);
+            color: white;
+            padding: 2px 20px;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section:before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+        }
+
+        .cta-section:after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            bottom: -75px;
+            left: -75px;
+        }
+
+        .cta-section h2 {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .btn-primary {
+            background: var(--secondary);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #0dff00;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section {
+            background: #ff8ad2;
+            padding: 3px 20px;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2px;
+
+
+        }
+
+        .contact-form .form-control {
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form .form-control:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+        }
+
+        .send-btn {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .send-btn:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-section {
+            background: #5f3232;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .stat-box {
+            padding: 20px;
+        }
+
+        .stat-box h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+
+        .service-section {
+            padding: 20px 0;
+        }
+
+        .service-card {
+            background: #cbfeff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            margin-bottom: 30px;
+        }
+
+        /*  services  section   css start*/
+        /* ==== SERVICE SECTION CSS ==== */
+
+        /* ===== SERVICE SECTION MAIN ===== */
+        .service-section {
+            padding: 0px 0;
+        }
+
+        .service-section .section-title {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        /* ===== SERVICE CARD ===== */
+        .service-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 20px;
+        }
+
+        .service-content h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .service-content p {
+            font-size: 15px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        /* ===== BUTTON ===== */
+        .whatsapp-btn {
+            background: #04d118 !important;
+            padding: 7px 14px;
+            border-radius: 50px;
+            color: #fff !important;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .whatsapp-btn:hover {
+            background: #084dc1 !important;
+        }
+
+        /* ===== RESPONSIVE === */
+
+        /* Large Tablets (max-width: 1200px) */
+        @media (max-width: 1200px) {
+            .service-img {
+                height: 210px;
+            }
+        }
+
+        /* Tablets (max-width: 991px) */
+        @media (max-width: 991px) {
+            .service-img {
+                height: 200px;
+            }
+
+            .service-content h4 {
+                font-size: 18px;
+            }
+
+            .service-section .section-title {
+                font-size: 30px;
+            }
+        }
+
+        /* Mobile (max-width: 767px) — 2 Columns → 1 Column */
+        @media (max-width: 767px) {
+            .service-card {
+                margin-bottom: 20px;
+            }
+
+            .service-img {
+                height: 180px;
+            }
+
+            .service-content p {
+                font-size: 14px;
+            }
+
+            .service-section .section-title {
+                font-size: 26px;
+            }
+        }
+
+        /* Small Mobile (max-width: 480px) */
+        @media (max-width: 480px) {
+            .service-img {
+                height: 160px;
+            }
+
+            .service-content h4 {
+                font-size: 16px;
+            }
+
+            .service-content p {
+                font-size: 13px;
+                line-height: 1.3;
+            }
+
+            .whatsapp-btn {
+                padding: 6px 12px;
+                font-size: 13px;
+            }
+
+            .service-section .section-title {
+                font-size: 24px;
+            }
+        }
+
+        .testimonial-section {
+            background: #bb2fcb5e;
+            padding: 10px 0;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 37px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2px;
+            position: relative;
+        }
+
+        .testimonial-card:before {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(52, 152, 219, 0.1);
+            font-family: Georgia, serif;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .author-info h5 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .author-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .rating {
+            color: #f1c40f;
+            margin-top: 5px;
+        }
+
+
+        /* main  section   css  end*/
+
+
+
+
+        /* ===
+       BASIC LAYOUT + VISUALS
+===start section====== */
+        :root {
+            --card-bg: #ffffff;
+            --section-bg: #f5f7fb;
+            --primary: #0d6efd;
+            /* Bootstrap primary */
+            --text-dark: #2c3e50;
+        }
+
+        body {
+            background: #fff2aa;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0px 0;
+        }
+
+        /* ===== Container for stats section ===== */
+        .stats-section {
+            background: linear-gradient(179deg, #f9b0ee, #fbffabe8);
+
+            padding: 10px 0;
+        }
+
+        .stats-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .stats-title h2 {
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.2px;
+            color: #000;
+        }
+
+        .stats-title p {
+            margin: 0;
+            color: #020fff;
+        }
+
+        /* ===== Each stat box ===== */
+        .stat-box {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px 18px;
+            box-shadow: 0 6px 20px rgba(32, 40, 60, 0.06);
+            transition: transform 0.45s cubic-bezier(.2, .9, .3, 1), box-shadow 0.3s;
+            text-align: center;
+            opacity: 0;
+            /* start hidden for fade-in */
+            transform: translateY(24px);
+            /* start lower for slide-up */
+        }
+
+        .stat-box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px rgba(32, 40, 60, 0.10);
+        }
+
+        /* Visible class toggled by JS when box is in view */
+        .stat-box.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== Number styling ===== */
+        .stat-number {
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+            color: #ff0000;
+            transition: text-shadow 0.25s ease, color 0.25s ease;
+            display: inline-block;
+            min-width: 80px;
+
+        }
+
+        /* Glow effect while counting */
+        .stat-number.glow {
+            color: var(--primary);
+            text-shadow: 0 0 14px rgba(13, 110, 253, 0.45);
+        }
+
+        /* Label */
+        .stat-label {
+            margin: 0;
+            color: #001eff;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* small screens tweak */
+        @media (max-width: 576px) {
+            .stat-number {
+                font-size: 2rem;
+                min-width: 60px;
+            }
+            .stat-box {
+                padding: 18px 12px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- HEADER SECTION START -->
+    <!-- DESTINATIONS BAR -->
+    <div class="destinations-bar">
+        <div class="destinations-scroll">
+           <a>Ayodhya</a> Varanasi <a>Prayagraj</a> <a>Haridwar</a><a>Rishikesh</a><a>Nainital</a><a>Pokhara</a><a>Kathmandu</a><a>Janakpur</a><a>Sikkim</a><a>Tripura</a><a>Nagaland</a>
+             <span class="proprietor-text">Proprietor - Gita</span>
+        </div>
+    </div>
+    <!-- MARQUEE -->
+    <marquee scrollamount="5">
+       Ayodhya || Varanasi || Prayagraj || Haridwar || Rishikesh || Nainital || Pokhara || Kathmandu || Darjeeling || Mustang || Muktinath || Chitwan || Janakpur
+    </marquee>
+    <!-- CONTACT -->
+    <div class="container py-2">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="top-contact text-center">
+                    <a href="https://wa.me/916307726624"><i class="fa fa-phone"></i>+91 9219698052</a>
+                    <a href="mailto:thefamilytravels@gmail.com" class="header-contact"><i class="fa fa-envelope"></i> sriradhekrishnatourandtravels@gmail.com</a>
+                    <a href="extra_activity.html" style="text-decoration:none;color:#fff;font-size:14px;">Extra Activity</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAVBAR -->
+    <header class="main-header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <!-- BRAND -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/klogo3.png" class="nav-logo" alt="The Family Travels Logo">
+                    <div class="brand-text">
+                        <span class="brand-title">SRI RADHE KRISHNA</span>
+                        <span class="brand-tagline">TOUR & TRAVELS JOURNEYS OF DEVOTION & DISCOVERY</span>
+                    </div>
+                </a>
+                <!-- TOGGLER -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- MENU -->
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nepal_tour.html">Nepal Tour</a></li>
+                        <li class="nav-item"><a class="nav-link" href="taxi_services.html">Taxi Services</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="adventure.html">Adventure</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="Fleet_Partners.html">Fleet Partners</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destination</a></li>
+                        <li class="nav-item"><a class="nav-link" href="package.html">Package</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- FLOATING BUTTONS -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/916307726624" target="_blank" class="floating-btn whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:6307726624" class="floating-btn call-btn"><i class="fa fa-phone"></i></a>
+        <a href="#" class="floating-btn back-to-top"><i class="fa fa-arrow-up"></i></a>
+    </div>
+    <!--- header  main  end-->
+    <!--- header  js  start-->
+    <script>
+        // Back to Top functionality
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        // Add active class to current page link
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.style.backgroundColor = '#ff6200';
+                    link.style.color = '#ffffff !important';
+                }
+            });
+        });   
+        // Make floating buttons more visible on scroll
+        window.addEventListener('scroll', function() {
+            const floatingButtons = document.querySelector('.floating-buttons');
+            if (window.scrollY > 300) {
+                floatingButtons.style.opacity = '1';
+                floatingButtons.style.visibility = 'visible';
+            } else {
+                floatingButtons.style.opacity = '0.9';
+            }
+        });
+    </script>
+     <!--- header  main  end-->
+
+       
+        <!-- =========================
+       STATS SECTION (SINGLE PAGE)
+       ========================= -->
+        <section class="stats-section">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="stats-title">
+                    <h2>हमारी उपलब्धियाँ</h2>
+                    <p>विश्वसनीय सेवाएँ — हमेशा आपके साथ</p>
+                </div>
+
+                <!-- Grid of stats -->
+                <div class="row g-3 justify-content-center">
+
+                    <!-- NOTE:
+             Each .counter element has:
+             - data-target: numeric target to count to (Number only)
+             - data-suffix: optional text appended after the number (e.g. + or /7)
+             - We start innerText with 0; JS will animate it
+        -->
+
+                    <!-- 1 -->
+                    <div class="col-md-3 col-6">
+                        <div class="stat-box">
+                            <div class="stat-number counter" data-target="15" data-suffix="+">0</div>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-md-3 col-6">
+                        <div class="stat-box">
+                            <div class="stat-number counter" data-target="5000" data-suffix="+">0</div>
+                            <p class="stat-label">Happy Customers</p>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-md-3 col-6">
+                        <div class="stat-box">
+                            <div class="stat-number counter" data-target="50" data-suffix="+">0</div>
+                            <p class="stat-label">Vehicles Fleet</p>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-md-3 col-6">
+                        <div class="stat-box">
+                            <!-- For "24/7" we use suffix "/7" and target 24 -->
+                            <div class="stat-number counter" data-target="24" data-suffix="/7">0</div>
+                            <p class="stat-label">Customer Support</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Start no section  end-->
+        <!-- ===== SERVICES SECTION ===== -->
+        <div class="service-section" id="services">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Our Services</h2>
+
+                <div class="row">
+
+                    <!-- 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/airport.jpg" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-plane me-2 text-primary"></i> Airport Transfers</h4>
+                                <p>Timely pickups and drops to Gorakhpur Airport with flight tracking.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/alora.webp" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-route me-2 text-primary"></i> Outstation Rides</h4>
+                                <p><b>Alora Temple </b> Ellora Caves - UNESCO World Heritage Centre.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/city.jfif" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-city me-2 text-primary"></i> City Rides</h4>
+                                <p>Affordable local transportation within the city & suburbs.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/nepaltour.jfif" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-umbrella-beach me-2 text-primary"></i> Nepal Tour</h4>
+                                <p>Kathmandu, Pokhara & other destinations with safe rides.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/medical.jfif" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-hospital me-2 text-primary"></i> Medical Trips</h4>
+                                <p>Hospital visits, emergency travel, and patient-friendly rides.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/corp.jpg" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-briefcase me-2 text-primary"></i> Corporate Rides</h4>
+                                <p>Professional travel service for business meetings & events.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/ralway.jfif" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-bus-alt me-2 text-primary"></i> Railway Transfers</h4>
+                                <p>Pick & drop from Gorakhpur Railway Station with tracking.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/coll.jpg" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-school me-2 text-primary"></i> School/College Rides</h4>
+                                <p>Safer rides for daily student pickups & drops.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/hill.jfif" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-mountain me-2 text-primary"></i> Hill Station Rides</h4>
+                                <p>Skilled drivers for safe travel to hilly destinations.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/event.jpg" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-gifts me-2 text-primary"></i> Event Transport</h4>
+                                <p>Wedding, party & celebration event transportation services.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/coup.webp" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-car-side me-2 text-primary"></i>couple tour packages</h4>
+                                <p>Premium cars for VIP guests, weddings & corporate trips.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <img src="images/group.webp" class="service-img" alt="">
+                            <div class="service-content">
+                                <h4><i class="fas fa-shuttle-van me-2 text-primary"></i> Group Travel</h4>
+                                <p>Comfortable travel for families, groups & tours.</p>
+                                <a href="https://wa.me/919219698052" target="_parent"
+                                    class="btn btn-secondry whatsapp-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== FEATURES SECTION ===== -->
+        <div class="container mt-2">
+            <h2 class="section-title text-center mb-5">Why Choose Us</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4 py-3">
+                    <div class="feature-box">
+                        <i class="fas fa-car"></i>
+                        <h5>Modern Fleet</h5>
+                        <p>Well-maintained cars with comfort & safety features for all your travel needs.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3">
+                    <div class="feature-box">
+                        <i class="fas fa-user-tie"></i>
+                        <h5>Expert Drivers</h5>
+                        <p>Experienced, professional drivers with excellent local knowledge and safe driving records.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3">
+                    <div class="feature-box">
+                        <i class="fas fa-crown"></i>
+                        <h5>Premium Service</h5>
+                        <p>24×7 customer support with transparent pricing and no hidden charges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== TESTIMONIALS SECTION ===== -->
+        <div class="testimonial-section">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">What Our Customers Say</h2>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">Best Gorakhpur Taxi provided excellent service for our family
+                                trip to Nepal. The driver was punctual, professional and the car was very comfortable.
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="images/customer.jfif" class="author-img" alt="Customer">
+                                <div class="author-info">
+                                    <h5>Riya Yadav</h5>
+                                    <p>Business Traveler</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">I use their service regularly for airport transfers. Always on
+                                time and the cars are well maintained. Highly recommended!</p>
+                            <div class="testimonial-author">
+                                <img src="images/img8.webp" class="author-img" alt="Customer">
+                                <div class="author-info">
+                                    <h5>Priyansh Sharma</h5>
+                                    <p>Frequent Flyer</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">Booked for a wedding function. They provided multiple cars and
+                                all arrived on time. Professional service at reasonable rates.</p>
+                            <div class="testimonial-author">
+                                <img src="images/Custo3.jfif  " class="author-img" alt="Customer">
+                                <div class="author-info">
+                                    <h5>Vikram Singh</h5>
+                                    <p>Local Customer</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CTA SECTION ===== -->
+        <div class="container mt-5" style="margin-top: 1rem !important;">
+            <div class="cta-section">
+                <h2>Ready to Book Your Ride?</h2>
+                <p class="mt-2">Experience the most reliable taxi service in Gorakhpur. Get instant quotes and easy
+                    booking.</p>
+
+                <a href="https://wa.me/919219698052" target="_parent" class="btn btn-secondry whatsapp-btn">Book Now</a>
+                </button>
+            </div>
+        </div>
+
+        <!-- ===== CONTACT FORM SECTION ===== -->
+        <div class="container">
+            <div class="contact-section mt-5" id="contact">
+                <h2 class="section-title mb-4">
+                    <a href="contact.html" style="text-decoration: none;">Get in Touch</a>
+                </h2>
+
+            </div>
+        </div>
+
+        <script>
+            function sendToWhatsApp() {
+                var name = document.getElementById("name").value;
+                var phone = document.getElementById("phone").value;
+                var email = document.getElementById("email").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+
+                var whatsappMessage =
+                    "Name:%20" + name + "%0A" +
+                    "Phone:%20" + phone + "%0A" +
+                    "Email:%20" + email + "%0A" +
+                    "Subject:%20" + subject + "%0A" +
+                    "Message:%20" + message;
+
+                var url = "https://wa.me/919219698052?text=" + whatsappMessage;
+
+                window.open(url, "_blank");
+            }
+        </script>
+
+
+       
+        <!--===== ABOUT US SECTION END ===== -->
+          <!--footer main  start-->
+    <div class="main-content">
+        <div class="container">
+            <h1 class="page-title">Sri Radhe Krishna Tour & Travels
+            Journeys of Devotion & Discovery</h1>
+            </div>
+    </div>
+    <!-- Footer Section start-->
+    <footer class="taxi-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-white">
+    <!-- Logo + Brand -->
+    <div class="d-flex align-items-center gap-3 flex-wrap mb-3">
+        <img src="images/klogo3.png"
+             class="rounded-circle img-fluid"
+             style="height:80px; width:80px;"
+             alt="logo">
+
+        <div class="fw-bold fs-5">
+             Sri Radhe Krishna Tour & Travels <br>
+            <small class="fw-normal fs-6">
+                Journeys of Devotion & Discovery
+            </small>
+        </div>
+    </div>
+    <!-- Description -->
+    <p class="small">
+        Providing reliable and comfortable taxi services in Gorakhpur and beyond.
+        Your journey is our priority.
+    </p>
+    <!-- Contact Info -->
+    <div class="d-flex align-items-start gap-2 mb-2">
+        <i class="fas fa-phone text-warning mt-1"></i>
+       <span>+91 9219698052</span>
+    </div>
+    <div class="d-flex align-items-start gap-2 mb-2">
+        <i class="fas fa-envelope text-warning mt-1"></i>
+        <span class="text-break">
+            sriradhekrishnatourandtravels@gmail.com
+        </span>
+    </div>
+    <div class="d-flex align-items-start gap-2 mb-3">
+        <i class="fas fa-map-marker-alt text-warning mt-1"></i>
+        <span>
+            Gita Vatika, Shahpur<br>
+            273006, Gorakhpur
+        </span>
+    </div>
+    <!-- Social Icons -->
+    <div class="d-flex gap-3">
+        <a href="#" class="btn btn-warning btn-sm rounded-circle">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="btn btn-warning btn-sm rounded-circle">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn btn-warning btn-sm rounded-circle">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/919219698052"
+           class="btn btn-warning btn-sm rounded-circle">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</div>
+                <!-- Popular Routes -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="section-toggle">
+                        <h5 class="footer-heading mb-0">Popular Routes</h5>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="scrollable-section">
+                        <ul class="footer-links">
+                            <li><a href="#">Gorakhpur to Gorakhnath Temple</a></li>
+                            <li><a href="#">Gorakhpur to Pokhara</a></li>
+                            <li><a href="#">Gorakhpur to Varanasi</a></li>
+                            <li><a href="#">Gorakhpur to Lucknow</a></li>
+                            <li><a href="#">Gorakhpur to Kathmandu</a></li>
+                            <li><a href="#">Gorakhpur to Ayodhya</a></li>
+                            <li><a href="#">Gorakhpur to Sonauli</a></li>
+                            <li><a href="#">Gorakhpur to Butwal</a></li>
+                            <li><a href="#">Gorakhpur to Delhi</a></li>
+                            <li><a href="#">Gorakhpur to Mumbai</a></li>
+                            <li><a href="#">Gorakhpur to Bangalore</a></li>
+                            <li><a href="#">Gorakhpur to Chennai</a></li>
+                        </ul>
+                    </div>
+                </div>   
+                <!-- More Routes -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="section-toggle">
+                        <h5 class="footer-heading mb-0">More Routes</h5>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="scrollable-section">
+                        <ul class="footer-links">
+                            <li><a href="#">Gorakhpur to Ranchi</a></li>
+                            <li><a href="#">Gorakhpur to Kolkata</a></li>
+                            <li><a href="#">Gorakhpur to Agra</a></li>
+                            <li><a href="#">Gorakhpur to Noida</a></li>
+                            <li><a href="#">Gorakhpur to Nainital</a></li>
+                            <li><a href="#">Gorakhpur to Char Dham</a></li>
+                            <li><a href="#">Gorakhpur to Muzaffarpur</a></li>
+                            <li><a href="#">Gorakhpur to Prayagraj</a></li>
+                            <li><a href="#">Gorakhpur to Patna</a></li>
+                            <li><a href="#">Gorakhpur to Jaipur</a></li>
+                            <li><a href="#">Gorakhpur to Hyderabad</a></li>
+                            <li><a href="#">Gorakhpur to Ahmedabad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Booking Centers -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="section-toggle">
+                        <h5 class="footer-heading mb-0">Booking Centers</h5>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="scrollable-section">
+                        <div class="booking-center">
+                            <h6>Head Office</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>         
+                        <div class="booking-center">
+                            <h6>Booking Center 1</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>    
+                        <div class="booking-center">
+                            <h6>Booking Center 2</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>    
+                        <div class="booking-center">
+                            <h6>Booking Center 3</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>
+                        <div class="booking-center">
+                            <h6>Booking Center 4</h6>
+                            <p>Gita vatika shahpur gorakhpur 273006, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Sri Radhe Krishna Tour & Travels Ajency. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+        <!--footer main  end-->
+    <!--footer js  start-->
+    <script>
+        // Toggle sections on mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const sectionToggles = document.querySelectorAll('.section-toggle');
+            sectionToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const section = this.nextElementSibling;
+                    this.classList.toggle('active');
+                    section.classList.toggle('active');
+                });
+            });
+            // Auto-expand sections on desktop
+            if (window.innerWidth > 768) {
+                document.querySelectorAll('.scrollable-section').forEach(section => {
+                    section.classList.add('active');
+                });
+            }
+        });
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!--footer js end-->
+        <!-- header section  js start -->
+        <script>
+            // Toggle sections on mobile
+            document.addEventListener('DOMContentLoaded', function () {
+                const sectionToggles = document.querySelectorAll('.section-toggle');
+
+                sectionToggles.forEach(toggle => {
+                    toggle.addEventListener('click', function () {
+                        const section = this.nextElementSibling;
+                        this.classList.toggle('active');
+                        section.classList.toggle('active');
+                    });
+                });
+
+                // Auto-expand sections on desktop
+                if (window.innerWidth > 768) {
+                    document.querySelectorAll('.scrollable-section').forEach(section => {
+                        section.classList.add('active');
+                    });
+                }
+            });
+        </script>
+        <!-- header section js  end -->
+        <!--===== ABOUT US SECTION  JS START===== -->
+        <script>
+            // Simple back to top functionality
+            document.querySelector('.back-to-top').addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Add animation on scroll
+            document.addEventListener('DOMContentLoaded', function () {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                        }
+                    });
+                }, observerOptions);
+
+                // Observe elements for animation
+                const elementsToAnimate = document.querySelectorAll('.feature-box, .service-card, .testimonial-card');
+                elementsToAnimate.forEach(el => {
+                    observer.observe(el);
+                });
+            });
+        </script>
+        <!--===== ABOUT US SECTION JS END ===== -->
+        <!-- =========================
+       JavaScript: Counter + Visibility
+       ========================= -->
+        <script>
+
+            (function () {
+                // Helper: format number with commas (optional). If you don't want commas, remove usage.
+                function formatNumber(n) {
+                    return n.toLocaleString();
+                }
+
+                // Animate a single counter element from 0 to target
+                function animateCounter(el, duration = 1500) {
+                    const target = parseInt(el.getAttribute('data-target'), 10) || 0;
+                    const suffix = el.getAttribute('data-suffix') || '';
+                    const start = 0;
+                    const startTime = performance.now();
+
+                    // Add glow effect while animating
+                    el.classList.add('glow');
+
+                    function step(now) {
+                        const elapsed = now - startTime;
+                        const progress = Math.min(elapsed / duration, 1); // 0..1
+                        // easeOutCubic for smoother slow-down effect
+                        const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+                        const current = Math.floor(start + (target - start) * easeOutCubic);
+
+                        el.innerText = formatNumber(current) + suffix;
+
+                        if (progress < 1) {
+                            requestAnimationFrame(step);
+                        } else {
+                            // ensure final value is exact
+                            el.innerText = formatNumber(target) + suffix;
+                            // remove glow shortly after finish
+                            setTimeout(() => el.classList.remove('glow'), 900);
+                        }
+                    }
+
+                    requestAnimationFrame(step);
+                }
+
+                // Main: observe .stat-box elements and start animations once visible
+                document.addEventListener('DOMContentLoaded', function () {
+                    const boxes = document.querySelectorAll('.stat-box');
+                    const counters = document.querySelectorAll('.counter');
+
+                    // IntersectionObserver options: trigger when ~30% visible
+                    const ioOptions = {
+                        root: null,
+                        rootMargin: '0px',
+                        threshold: 0.25
+                    };
+
+                    let started = false; // ensure animations run only once
+
+                    const observer = new IntersectionObserver((entries, obs) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                // add visible class to the box (fade + slide)
+                                entry.target.classList.add('visible');
+
+                                // If not started, start counting with small stagger
+                                if (!started) {
+                                    started = true;
+
+                                    // Stagger counters: each counter starts a bit later for nice effect
+                                    counters.forEach((c, idx) => {
+                                        setTimeout(() => animateCounter(c), idx * 180);
+                                    });
+                                }
+
+                                // We can unobserve this box (no need to watch it further)
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    }, ioOptions);
+
+                    // Observe each stat-box
+                    boxes.forEach(box => observer.observe(box));
+                });
+            })();
+        </script>
+
+        <!-- Bootstrap JS (optional) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
